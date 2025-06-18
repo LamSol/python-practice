@@ -51,6 +51,6 @@ print("The new list after 1 movie has been added:", movies)
 movies.pop()
 print("The new list after the last one has been removed",movies)
 
-# Use insert() to add one at index 2
+# Use insert() to add one at index 2 and printing the final list
 movies.insert(2, "The Dark Knight")
 print("The new list with The movie inserted at index 2", movies)
