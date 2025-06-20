@@ -76,3 +76,20 @@ print(sort_lst)
 numbers = [3,5,6,7,2,8]
 squared = map(lambda a: a*a, numbers)
 print(list(squared))
+
+# Lets do something with strings using the previous nam list
+
+uppercased = list(map(lambda name: name.upper(), nam))
+print(uppercased)
+
+# Return: At the end of a function, if there is an output of the function, the return keyword can be used to send a result of the function
+# Return:
+# Ends the function — anything after return is ignored.
+# You can return any data type: numbers, strings, lists, dictionaries, booleans, even other functions.
+# You can also return multiple values (it will be a tuple).
+
+# Something just beyond the typical return value.
+def min_max(numbers):
+    return min(numbers), max(numbers)
+low, high = min_max([1,6,4,7,3,9,10])
+print(low,high)
