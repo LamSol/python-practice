@@ -35,3 +35,10 @@ c.wheel()
 c.rims()
 
 
+# Difference between Function and Method
+# Function: Doesn’t belong to a class; defined with def outside any class.
+# Method: Defined inside a class; always has self as the first parameter (for instance methods).
+# In Simple Terms:
+# Term	        Belongs To	                Called On	        First Parameter
+# Function	    Independent block of code	Called directly	    None required
+# Method	    Belongs to a class/object	Called on object	self (usually)
