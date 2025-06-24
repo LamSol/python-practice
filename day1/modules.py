@@ -34,3 +34,28 @@ print("Difference:",sub(a,b))
 print("Product", mul(a,b))
 print("Division",div(a,b))
 
+# There are also built in modules like random, datetime, os
+# random random module is used to generate random items like numbers, item from list, etc
+# datetime module is used to get the date and time
+# os module is used for interacting with the operating System
+
+# random:
+import random
+print(random.randint(1,10)) # Random integer between 1-10
+print(random.random()) # Random float between 0.0 and 1.0
+print(random.choice(['a','b','c','d'])) # Random item from list
+print(random.sample(range(100),5)) # Random 5 unique values from 0-99
+
+# Date Time:
+from datetime import datetime, date, timedelta
+now = datetime.now()
+print("Current Date & Time: ", now)
+print("Only Date: ", now.date())
+print("Only time: ", now.time())
+
+tomorrow = now + timedelta(days =1)
+print("Tomorrow's date: ", tomorrow.date())
+
+# Formatting:
+print(now.strftime("%d-%m-%Y"))
+
