@@ -21,3 +21,16 @@
 from greetings import welcome,goodbye
 print(welcome("Lam"))
 print(goodbye("Lam"))
+
+# Lets built a small calculator module called calculato.py
+# Let us import the module and use the functions
+
+from calculator import add,sub,mul,div
+a = float(input("Enter the first Number: "))
+b = float(input("Enter the second number: "))
+
+print("Sum:", add(a,b))
+print("Difference:",sub(a,b))
+print("Product", mul(a,b))
+print("Division",div(a,b))
+
