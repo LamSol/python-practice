@@ -48,5 +48,15 @@ def about():
 def product_detail(product_id):
     return f"Details for product ID: {product_id}"
 
+# # To Allow both GET and POST:
+# @app.route('/submit', methods=['GET', 'POST'])
+# def submit():
+#     if request.method == 'POST':
+#         return "Form Submitted!"
+#     return "This is the form page."
+# If the user visits the page, it’s a GET → "This is the form page."
+# If the user submits a form, it sends a POST → "Form Submitted!"
+
+
 if __name__ == '__main__':
     app.run(debug=True)
