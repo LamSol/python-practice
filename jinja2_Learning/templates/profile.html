@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+    </head>
+    <body>
+        <h1>{{name}} (Age: {{ age }})</h1>
+        <h2>Hobbies: </h2>
+        <ul>
+            {% for hobby in hobbies %}
+            <li>{{hobby}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
